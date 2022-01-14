@@ -12,7 +12,8 @@ int executioner(char *string, stack_t **head, unsigned int ln_nbr)
 	instruction_t inst[] = {
 		{"pall", pall_fx}, {"pint", pint_fx},
 		{"pop", pop_fx}, {"swap", swap_fx},
-		{"add", add_fx}, {NULL, NULL}
+		{"add", add_fx}, {"nop", nop_fx},
+		{NULL, NULL}
 	};
 
 	int i;
@@ -25,6 +26,6 @@ int executioner(char *string, stack_t **head, unsigned int ln_nbr)
 			return (EXIT_SUCCESS);
 		}
 	}
-	printf("L%d: unknown instringuction %s\n", ln_nbr, string);
+	fprintf(stderr,"L%d: unknown instruction %s\n", ln_nbr, string);
 	exit(EXIT_FAILURE);
 }
