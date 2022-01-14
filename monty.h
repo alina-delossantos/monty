@@ -1,5 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -58,5 +59,11 @@ void pall_fx(stack_t **head_pointer, unsigned int ln_nbr);
 void pint_fx(stack_t **header_pointer, unsigned int ln_nbr);
 void pop_fx(stack_t **header_pointer, unsigned int ln_nbr);
 void nop_fx(stack_t **h, unsigned int ln_nbr);
+
+/* 2_opcode_implementation */
+
+void swap_fx(stack_t **h, unsigned int ln_nbr);
+void add_fx(stack_t **h, unsigned int ln_nbr);
+
 
 #endif

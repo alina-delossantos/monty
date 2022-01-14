@@ -52,11 +52,11 @@ void pall_fx(stack_t **head_pointer, unsigned int ln_nbr)
 
 /**
  * pint_fx - Prints the value at the top of the stack
- * @header_pointer: pointer to head
+ * @h: pointer to head
  * @ln_nbr: line number
  * Return: void
  */
-void pint_fx(stack_t **header_pointer, unsigned int ln_nbr)
+void pint_fx(stack_t **h, unsigned int ln_nbr)
 {
 	if ((*h) == NULL || h == NULL)
 	{
@@ -70,11 +70,11 @@ void pint_fx(stack_t **header_pointer, unsigned int ln_nbr)
 
 /**
  * pop_fx - Removes th e top element of the stack
- * @header_pointer: pointer to head
+ * @h: pointer to head
  * @ln_nbr: line number
  * Return: void
  */
-void pop_fx(stack_t **header_pointer, unsigned int ln_nbr)
+void pop_fx(stack_t **h, unsigned int ln_nbr)
 {
 	stack_t *top = *h;
 

@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 		{
 			ins = strtok(NULL, "\n\t\r ");
 			if (_isdigit(ins) == 0 && strcmp("push", opcode) == 0 && opcode[0] != '#')
-				push(&head, atoi(ins));
+				push_fx(&head, atoi(ins));
 			else if (strcmp("push", opcode) != 0 && opcode[0] != '#')
 				executioner(opcode, &head, ln_nbr);
 			else if (opcode[0] != '#')
