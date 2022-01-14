@@ -45,6 +45,7 @@ typedef struct instruction_s
 void arg_ck(int ac);
 void willy(char *ln, stack_t **head, FILE *file);
 int _isdigit(char *str);
+void free_nodes(stack_t **head);
 
 /* executioner */
 
