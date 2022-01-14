@@ -60,7 +60,7 @@ void pint_fx(stack_t **h, unsigned int ln_nbr)
 {
 	if ((*h) == NULL || h == NULL)
 	{
-		fprintf(stderr, "L%d: can't pint_fx, stack empty\n", ln_nbr);
+		fprintf(stderr, "L%d: can't pint, stack empty\n", ln_nbr);
 		exit(EXIT_FAILURE);
 	}
 	printf("%d\n", (*h)->n);
