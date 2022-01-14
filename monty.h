@@ -41,3 +41,13 @@ typedef struct instruction_s
 /* functions */
 
 /* aux_fxs */
+
+void arg_ck(int ac);
+void willy(char *ln, stack_t **head, FILE *file);
+int _isdigit(char *str);
+
+/* executioner */
+
+int executioner(char *string, stack_t **head, unsigned int ln_nbr);
+
+#endif
