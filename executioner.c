@@ -26,6 +26,6 @@ int executioner(char *string, stack_t **head, unsigned int ln_nbr)
 			return (EXIT_SUCCESS);
 		}
 	}
-	fprintf(stderr,"L%d: unknown instruction %s\n", ln_nbr, string);
+	fprintf(stderr, "L%d: unknown instruction %s\n", ln_nbr, string);
 	exit(EXIT_FAILURE);
 }
