@@ -8,6 +8,7 @@
  * @n: int
  * Return: new node
  */
+stack_t *push(stack_t **head, int n)
 {
 	stack_t *new = NULL;
 

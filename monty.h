@@ -51,4 +51,12 @@ void free_nodes(stack_t **head);
 
 int executioner(char *string, stack_t **head, unsigned int ln_nbr);
 
+/* opcode_implementation.c */
+
+stack_t *push_fx(stack_t **head, int n);
+void pall_fx(stack_t **head_pointer, unsigned int ln_nbr);
+void pint_fx(stack_t **header_pointer, unsigned int ln_nbr);
+void pop_fx(stack_t **header_pointer, unsigned int ln_nbr);
+void nop_fx(stack_t **h, unsigned int ln_nbr);
+
 #endif

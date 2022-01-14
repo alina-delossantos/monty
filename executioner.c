@@ -9,7 +9,7 @@
  */
 int executioner(char *string, stack_t **head, unsigned int ln_nbr)
 {
-	instringuction_t inst[] = {
+	instruction_t inst[] = {
 		{"pall", pall_fx}, {"pint", pint_fx},
 		{"pop", pop_fx}, {"swap", swap_fx},
 		{"add", add_fx}, {NULL, NULL}
