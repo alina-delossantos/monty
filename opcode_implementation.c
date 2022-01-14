@@ -80,7 +80,7 @@ void pop_fx(stack_t **h, unsigned int ln_nbr)
 
 	if (*h == NULL)
 	{
-		fprintf(stderr, "L%d: can't pop_fx an empty stack\n", ln_nbr);
+		fprintf(stderr, "L%d: can't pop an empty stack\n", ln_nbr);
 		exit(EXIT_FAILURE);
 	}
 	if (top->next)
