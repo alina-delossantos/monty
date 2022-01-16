@@ -13,7 +13,7 @@ int executioner(char *string, stack_t **head, unsigned int ln_nbr)
 		{"pall", pall_fx}, {"pint", pint_fx},
 		{"pop", pop_fx}, {"swap", swap_fx},
 		{"add", add_fx}, {"nop", nop_fx}, {"sub", sub_fx},
-		{"div", div_fx}, {NULL, NULL}
+		{"div", div_fx}, {"mul", mul_fx}, {NULL, NULL}
 	};
 
 	int i;

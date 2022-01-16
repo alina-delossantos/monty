@@ -66,5 +66,6 @@ void swap_fx(stack_t **h, unsigned int ln_nbr);
 void add_fx(stack_t **h, unsigned int ln_nbr);
 void sub_fx(stack_t **h, unsigned int ln_nbr);
 void div_fx(stack_t **h, unsigned int ln_nbr);
+void mul_fx(stack_t **h, unsigned int ln_nbr);
 
 #endif

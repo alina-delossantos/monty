@@ -84,3 +84,23 @@ void div_fx(stack_t **h, unsigned int ln_nbr)
 	*h = holder->next;
 	free(holder);
 }
+
+/**
+ * mul_fx - multiplies the second top element of the stack with the top element 
+ * @h: Pointer to the top of the stack
+ * @ln_nbr: line count
+ */
+void mul_fx(stack_t **h, unsigned int ln_nbr)
+{
+	stack_t *holder = *h;
+
+	if (*h == NULL || (*h)->next == NULL)
+	{
+		fprintf(stderr, "L%d: can't mul_fx, stack too short\n", ln_nbr);
+		exit(EXIT_FAILURE);
+	}
+	holder->next->n *= holder->n;
+	holder->next->prev = NULL;
+	*h = holder->next;
+	free(holder);
+}
