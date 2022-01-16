@@ -86,7 +86,7 @@ void div_fx(stack_t **h, unsigned int ln_nbr)
 }
 
 /**
- * mul_fx - multiplies the second top element of the stack with the top element 
+ * mul_fx - multiplies the second top element of the stack with the top element
  * @h: Pointer to the top of the stack
  * @ln_nbr: line count
  */

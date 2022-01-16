@@ -68,4 +68,10 @@ void sub_fx(stack_t **h, unsigned int ln_nbr);
 void div_fx(stack_t **h, unsigned int ln_nbr);
 void mul_fx(stack_t **h, unsigned int ln_nbr);
 
+/* 3_opcode_implementation */
+
+void mod_fx(stack_t **h, unsigned int ln_nbr);
+void pchar(stack_t **h, unsigned int ln_nbr);
+void pstr(stack_t **h, unsigned int ln_nbr);
+
 #endif
