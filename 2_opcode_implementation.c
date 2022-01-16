@@ -41,24 +41,21 @@ void add_fx(stack_t **h, unsigned int ln_nbr)
 }
 
 /**
- * sub_fx - subtracts the top element of the stack from the second top element
- * @stack: stack
- * @ln_nbr: line number
+ * sub_fx - subtracts the top element of the stack from the second top element 
+ * @h: Pointer to the top of the stack
+ * @ln_nbr: line count
  */
-
 void sub_fx(stack_t **h, unsigned int ln_nbr)
 {
-	stack_t *holder = NULL;
-	int diff = 0;
+	stack_t *holder = *h;
 
-	holder = *stack;
-	if (holder == NULL || holder->next == NULL)
+	if (*h == NULL || (*h)->next == NULL)
 	{
-		printf("L%d: can't sub, stack too short\n", ln_nbr);
+		fprintf(stderr, "L%d: can't sub_fx, stack too short\n", ln_nbr);
 		exit(EXIT_FAILURE);
 	}
-	diff = holder->next->n - holder->n;
-	holder->next->n = diff;
-
-	pop_func(h, ln_nbr);
+	holder->next->n -= holder->n;
+	holder->next->prev = NULL;
+	*h = holder->next;
+	free(holder);
 }
