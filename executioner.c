@@ -12,8 +12,8 @@ int executioner(char *string, stack_t **head, unsigned int ln_nbr)
 	instruction_t inst[] = {
 		{"pall", pall_fx}, {"pint", pint_fx},
 		{"pop", pop_fx}, {"swap", swap_fx},
-		{"add", add_fx}, {"nop", nop_fx},
-		{NULL, NULL}
+		{"add", add_fx}, {"nop", nop_fx}, {"sub", sub_fx},
+		{"div", div_fx}, {NULL, NULL}
 	};
 
 	int i;
