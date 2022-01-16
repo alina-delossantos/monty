@@ -41,7 +41,7 @@ void add_fx(stack_t **h, unsigned int ln_nbr)
 }
 
 /**
- * sub_fx - subtracts the top element of the stack from the second top element 
+ * sub_fx - subtracts the top element of the stack from the second top element
  * @h: Pointer to the top of the stack
  * @ln_nbr: line count
  */
